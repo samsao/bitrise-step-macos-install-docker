@@ -26,6 +26,17 @@ In Bash, simply do at the top of your script:
 eval $(docker-machine env default)
 ```
 
+For other languages, execute `docker-machine env default` and make all output lines
+available as environment variables of your child processes. The output of the command
+looks like:
+
+```
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/vagrant/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
+```
+
 ## How to contribute to this Step
 
 1. Fork this repository
